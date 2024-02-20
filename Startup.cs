@@ -2,10 +2,10 @@
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 public class Startup
 {
+
     public IConfiguration Configuration { get; }
 
     public Startup(IConfiguration configuration)
@@ -15,6 +15,9 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        // Configurações de serviço
+        services.AddSingleton(Configuration);
+        
         // Configuração do DbContext para uso com um banco de dados específico (por exemplo, PostgreSQL).
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
