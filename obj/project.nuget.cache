@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pFM1WTkX2EfHU3KfEWYzXstAVT7IZ5Z7Mld77Bvb08R1rWw0DF+yskT7QsXn8KvdptyLdGz2uUWIZ21wXg5/DQ==",
+  "dgSpecHash": "IKpb4/x5aT8xvB9lkilAD7TE2kqkF51rrbreQLhCIp/0ur9m7DwELiv9JcQIfqoH6n6dVopqKLPIaCw28LkHkw==",
   "success": true,
   "projectFilePath": "/home/ivan/workspaces/keevo/testeKeevo/testeKeevo.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,10 @@
     "/home/ivan/.nuget/packages/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/home/ivan/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512"
+    "/home/ivan/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.netcore.app.ref/8.0.2/microsoft.netcore.app.ref.8.0.2.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.2/microsoft.aspnetcore.app.ref.8.0.2.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.2/microsoft.netcore.app.host.linux-x64.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }
