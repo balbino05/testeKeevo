@@ -1,6 +1,5 @@
 // Startup.cs
 
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 public class Startup
@@ -17,7 +16,7 @@ public class Startup
     {
         // Configurações de serviço
         services.AddSingleton(Configuration);
-        
+
         // Configuração do DbContext para uso com um banco de dados específico (por exemplo, PostgreSQL).
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
