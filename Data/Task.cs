@@ -2,23 +2,26 @@
 
 using System.ComponentModel.DataAnnotations;
 
-public class Task
-{
-    [Key]
-    public int Id { get; set; }
-
-    [Required]
-    public string Name { get; set; }
-
-    public string Description { get; set; }
-
-    [Required]
-    public string Status { get; set; }
-
-    public Task()
+namespace testeKeevo.Data{
+    public class Task
     {
-        Name = "";
-        Description = "";
-        Status = "";
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        public string Description { get; set; }
+
+        [Required]
+        public string Status { get; set; }
+
+        public Task()
+        {
+            Name = "";
+            Description = "";
+            Status = "";
+        }
     }
 }
+

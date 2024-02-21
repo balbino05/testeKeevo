@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IKpb4/x5aT8xvB9lkilAD7TE2kqkF51rrbreQLhCIp/0ur9m7DwELiv9JcQIfqoH6n6dVopqKLPIaCw28LkHkw==",
+  "dgSpecHash": "r58KTG9jlxCnB5pl0w3EDsITBSUcSnDOCex2tD0iehhQco+jWehyPj1ypQ0bB9jDMU8ByZ1hBDiy+3ABctXCJA==",
   "success": true,
   "projectFilePath": "/home/ivan/workspaces/keevo/testeKeevo/testeKeevo.csproj",
   "expectedPackageFiles": [
@@ -17,9 +17,11 @@
     "/home/ivan/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.2/microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.entityframeworkcore.design/8.0.2/microsoft.entityframeworkcore.design.8.0.2.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.entityframeworkcore.tools/8.0.2/microsoft.entityframeworkcore.tools.8.0.2.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
@@ -51,9 +53,9 @@
     "/home/ivan/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/ivan/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
-    "/home/ivan/.nuget/packages/microsoft.netcore.app.ref/8.0.2/microsoft.netcore.app.ref.8.0.2.nupkg.sha512",
     "/home/ivan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.2/microsoft.aspnetcore.app.ref.8.0.2.nupkg.sha512",
-    "/home/ivan/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.2/microsoft.netcore.app.host.linux-x64.8.0.2.nupkg.sha512"
+    "/home/ivan/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.2/microsoft.netcore.app.host.linux-x64.8.0.2.nupkg.sha512",
+    "/home/ivan/.nuget/packages/microsoft.netcore.app.ref/8.0.2/microsoft.netcore.app.ref.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

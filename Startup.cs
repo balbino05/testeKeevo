@@ -1,28 +1,52 @@
 // Startup.cs
 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using testeKeevo.Data;
+using testeKeevo.Controllers;
 
-public class Startup
+namespace testeKeevo
 {
+    public class Startup
+        {
+            public Startup(IConfiguration configuration)
+            {
+                Configuration = configuration;
+            }
 
-    public IConfiguration Configuration { get; }
+            public IConfiguration Configuration { get; }
 
-    public Startup(IConfiguration configuration)
-    {
-        Configuration = configuration;
-    }
+            // Este método é chamado no tempo de execução. Use este método para adicionar serviços ao contêiner.
+            public void ConfigureServices(IServiceCollection services)
+            {
+                services.AddControllers();
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseNpgsql(Configuration.GetConnectionString("ApplicationDbContext")));
 
-    public void ConfigureServices(IServiceCollection services)
-    {
-        // Configurações de serviço
-        services.AddSingleton(Configuration);
+                services.AddSwaggerGen(c =>
+                {
+                    c.SwaggerDoc("v1", new OpenApiInfo { Title = "testeKeevo", Version = "v1" });
+                });.
+            }
+            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nome do Seu Projeto V1");
+                });
 
-        // Configuração do DbContext para uso com um banco de dados específico (por exemplo, PostgreSQL).
-        services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-        
-        // Outras configurações e serviços podem ser adicionados aqui.
-    }
+                app.UseRouting();
 
-    // ...
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllers();
+                });
+            }
+        }
 }

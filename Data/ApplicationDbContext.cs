@@ -2,15 +2,15 @@
 
 using Microsoft.EntityFrameworkCore;
 
-
-public class ApplicationDbContext : DbContext
+namespace testeKeevo.Data
 {
-    
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
-    : base(options)
-    { 
-        
+    public class ApplicationDbContext : DbContext
+    {
+        public DbSet<Task> Tasks { get; set; }
+
+                    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+                    => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=keevo;Username=postgres;Password=Dragoon@182811");
     }
 
-    public DbSet<Task> Tasks { get; set; }
+
 }
