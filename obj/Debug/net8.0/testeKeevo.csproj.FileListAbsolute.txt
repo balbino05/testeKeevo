@@ -99,9 +99,15 @@
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.testeKeevo.props
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/staticwebassets.pack.json
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/scopedcss/bundle/testeKeevo.styles.css
-/home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.csproj.CopyComplete
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.dll
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/refint/testeKeevo.dll
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.pdb
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.genruntimeconfig.cache
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/ref/testeKeevo.dll
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/web.config
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/appsettings.Development.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/appsettings.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/package.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/testeKeevo.deps.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/out/testeKeevo.runtimeconfig.json
+/home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.csproj.Up2Date
