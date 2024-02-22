@@ -20,13 +20,9 @@ app.UseHttpsRedirection();
 app.MapGet("/task", () =>
 {
     var task =  Enumerable.Range(1, 5).Select(index =>
-        new task
+        new getTask
         (
-            Name : "teste",
-            Description : "Task Description",
-            Status : "Pending",
-            CreatedAt : DateTime.Now,
-            UpdatedAt : DateTime.Now
+            Id : int.Parse(index.ToString())
 
         ))
         .ToArray();
@@ -51,4 +47,9 @@ record task( string Name, string Description, string Status, DateTime CreatedAt,
     public string Status { get; init; }
     public DateTime CreatedAt { get; init; }
     public DateTime UpdatedAt { get; init; }
+}
+
+record getTask(int Id)
+{
+    public int Id { get; init; }
 }
