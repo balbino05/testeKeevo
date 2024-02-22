@@ -35,6 +35,13 @@ app.MapGet("/task", () =>
 .WithName("GetTask")
 .WithOpenApi();
 
+app.MapPost("/task", (task task) =>
+{
+    return Results.Created($"/task/{task.Name}", task);
+})
+.WithName("CreateTask")
+.WithOpenApi();
+
 app.Run();
 
 record task( string Name, string Description, string Status, DateTime CreatedAt, DateTime UpdatedAt)
