@@ -15,12 +15,15 @@ namespace testeKeevo.Data{
 
         [Required]
         public string Status { get; set; }
-
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public Task()
         {
             Name = "";
             Description = "";
             Status = "";
+            CreatedAt = DateTime.Now;
+            UpdatedAt = DateTime.Now;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace testeKeevo
                 services.AddSwaggerGen(c =>
                 {
                     c.SwaggerDoc("v1", new OpenApiInfo { Title = "testeKeevo", Version = "v1" });
-                });.
+                });
             }
             public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             {

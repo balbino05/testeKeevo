@@ -111,3 +111,9 @@
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.pdb
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.genruntimeconfig.cache
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/ref/testeKeevo.dll
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/angular.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/package-lock.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/package.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/tsconfig.app.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/tsconfig.json
+/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/frontEnd/testeKeevo/tsconfig.spec.json

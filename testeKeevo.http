@@ -1,6 +1,6 @@
 @testeKeevo_HostAddress = http://localhost:5208
 
-GET {{testeKeevo_HostAddress}}/weatherforecast/
+GET {{testeKeevo_HostAddress}}/task/
 Accept: application/json
 
 ###

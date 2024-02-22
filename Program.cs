@@ -16,29 +16,32 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/task", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
+    var task =  Enumerable.Range(1, 5).Select(index =>
+        new task
         (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
+            Name : "teste",
+            Description : "Task Description",
+            Status : "Pending",
+            CreatedAt : DateTime.Now,
+            UpdatedAt : DateTime.Now
+
         ))
         .ToArray();
-    return forecast;
+    return task;
 })
-.WithName("GetWeatherForecast")
+.WithName("GetTask")
 .WithOpenApi();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+record task( string Name, string Description, string Status, DateTime CreatedAt, DateTime UpdatedAt)
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public string Name { get; init; }
+    public string Description { get; init; }
+    public string Status { get; init; }
+    public DateTime CreatedAt { get; init; }
+    public DateTime UpdatedAt { get; init; }
 }

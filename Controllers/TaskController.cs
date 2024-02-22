@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using testeKeevo.Data;
 
 namespace testeKeevo.Controllers
 {
@@ -26,7 +27,7 @@ namespace testeKeevo.Controllers
         /// <param name="modelo">Dados do novo item</param>
         /// <returns>Item criado</returns>
         [HttpPost]
-        public IActionResult Post([FromBody] SeuModelo modelo)
+        public IActionResult Post([FromBody] Task task)
         {
             // Lógica para processar dados do modelo
             return Ok("Dados recebidos com sucesso!");
