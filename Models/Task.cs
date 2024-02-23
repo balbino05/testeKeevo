@@ -1,6 +1,6 @@
 namespace testeKeevo.Models
 {
-    public class Evento
+    public class Task
     {
         public int Id { get; set; }
         public string Nome { get; set; }

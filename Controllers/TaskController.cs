@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using testeKeevo.Data;
+using testeKeevo.Migrations;
 using testeKeevo.Models;
 
 namespace testeKeevo.Controllers
@@ -11,42 +12,34 @@ namespace testeKeevo.Controllers
     [ApiController]
     public class Task : ControllerBase
     {
+        private readonly ApplicationDbContext _context;
+
         public Task()
         {
-            // Construtor
         }
-        public IEnumerable<Evento> _evento = new Evento []{
-            new Evento(){
-                Id = 1,
-                Nome = "Nome do Evento",
-                Description = "Descrição do Evento",
-                Status = "Status do Evento"
-            },
-            new Evento(){
-                Id = 2,
-                Nome = "Nome do Evento 2",
-                Description = "Descrição do Evento 2",
-                Status = "Status do Evento 2"
-            }
-        };
+
+        public Task( ApplicationDbContext context)
+        {
+            _context = context;
+        }
          /// <summary>
         /// Obtém todos os itens.
         /// </summary>
         /// <returns>Lista de itens</returns>
         [HttpGet]
-        public IEnumerable<Evento> Get()
+       
+        public IEnumerable<Task> Get()
         {
             // Lógica para obter dados
-
-            return _evento;
+            return (IEnumerable<Task>)_context.Tasks;
         }
 
          [HttpGet("{id}")]
-        public IEnumerable<Evento> GetById(int id)
+        public IEnumerable<Task> GetById(int id)
         {
             // Lógica para obter dados
 
-            return _evento.Where(evento=> evento.Id == id);
+            return (IEnumerable<Task>)_context.Tasks.Find(id);
         }
 
         /// <summary>
