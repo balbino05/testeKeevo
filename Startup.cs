@@ -35,13 +35,21 @@ namespace testeKeevo
             }
             public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             {
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
+                if (env.IsDevelopment())
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Nome do Seu Projeto V1");
-                });
+                    app.UseDeveloperExceptionPage();
+                    app.UseSwagger();
+                    app.UseSwaggerUI(c =>
+                    {
+                        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TesteKeevo V1");
+                    });
+                }
 
+                app.UseHttpsRedirection();
+                
                 app.UseRouting();
+
+                app.UseAuthentication();
 
                 app.UseEndpoints(endpoints =>
                 {

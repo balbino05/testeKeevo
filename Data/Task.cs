@@ -36,14 +36,7 @@ namespace testeKeevo.Data{
         /// Data da última atualização da tarefa.
         /// </summary>
         public DateTime UpdatedAt { get; set; }
-        public Task()
-        {
-            Name = "";
-            Description = "";
-            Status = "";
-            CreatedAt = DateTime.Now;
-            UpdatedAt = DateTime.Now;
-        }
+        
     }
 }
 

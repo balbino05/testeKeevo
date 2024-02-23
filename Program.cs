@@ -1,3 +1,5 @@
+using testeKeevo.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,19 +18,20 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
-app.MapGet("/task", () =>
+app.MapGet("api/task", () =>
 {
-    var task =  Enumerable.Range(1, 5).Select(index =>
-        new getTask
-        (
-            Id : int.Parse(index.ToString())
+    return new testeKeevo.Controllers.Task().Get();
 
-        ))
-        .ToArray();
-    return task;
 })
-.WithName("GetTask")
+.WithName("GetTaskAll")
+.WithOpenApi();
+
+app.MapGet("api/task/{id}", (int id) =>
+{
+    return new testeKeevo.Controllers.Task().GetById(id);
+
+})
+.WithName("GetTaskById")
 .WithOpenApi();
 
 app.MapPost("/task", (task task) =>
@@ -37,6 +40,8 @@ app.MapPost("/task", (task task) =>
 })
 .WithName("CreateTask")
 .WithOpenApi();
+
+
 
 app.Run();
 
