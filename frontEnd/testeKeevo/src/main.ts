@@ -12,8 +12,8 @@ bootstrapApplication(AppComponent, appConfig)
 
 @NgModule({
   declarations: [
+    TabelaDadosComponent, // Add TabelaDadosComponent to the declarations array
     // ... seus componentes
-    TabelaDadosComponent,
   ],
   imports: [
     HttpClientModule, // Adicione esta linha
