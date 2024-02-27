@@ -10,12 +10,14 @@ import { CommonModule } from '@angular/common';
 })
 export class TarefasComponent  implements OnInit{
   public tarefasData: any = [{
+    id: 1,
     title: 'Tarefa 1',
     description: 'Descrição 1',
     status: 'pending',
     created_at: '2021-08-30T14:18:00.000Z',
   },
   {
+    id: 2,
     title: 'Tarefa 2',
     description: 'Descrição 2',
     status: 'pending',

@@ -1,5 +1,14 @@
 <p>Tarefas</p>
 
-<div *ngFor="let tarefa of tarefasData">
-<p>{{tarefa.description}}</p>
-</div>
+<ul *ngFor="let tarefa of tarefasData">
+  <li *ngFor="let tarefa of tarefasData">
+    <b>{{tarefa.id}}</b>
+    <b>{{tarefa.title}}</b>
+    {{tarefa.description}}
+    {{tarefa.status}}
+    {{tarefa.createdAt}}
+
+    <hr>
+  </li>
+</ul>
+
