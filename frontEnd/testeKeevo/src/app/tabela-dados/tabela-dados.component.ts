@@ -12,7 +12,7 @@ export class TabelaDadosComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost/dados').subscribe(
+    this.http.get('https://localhost/api/task').subscribe(
       (data : any) => { // Change the type of 'data' to 'Object'
         this.dados = data;
       },
