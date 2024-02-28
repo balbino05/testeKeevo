@@ -19,7 +19,7 @@
   </div>
 </form>
 
-<table *ngFor="let tarefa of tarefasData" class="table table-striped">
+<table class="table table-striped">
   <thead class="thead-dark">
     <tr>
       <th>Id</th>
@@ -30,12 +30,26 @@
       <th>Opçoes</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>{{tarefa.id}} </tr>
-    <tr>{{tarefa.title}}</tr>
-    <tr>{{tarefa.description}}</tr>
-    <tr>{{tarefa.date}}</tr>
-    <tr></tr>
+  <tbody *ngFor="let tarefa of tarefasData">
+    <td>
+      {{tarefa.id}}
+    </td>
+    <td>
+      {{tarefa.title}}
+    </td>
+    <td>
+      {{tarefa.description}}
+    </td>
+    <td>
+      {{tarefa.status}}
+    </td>
+    <td>
+      {{tarefa.createdAt}}
+    </td>
+    <td>
+      <button class="btn btn-outline-primary">Editar</button>
+      <button class="btn btn-outline-danger">Excluir</button>
+    </td>
   </tbody>
 </table>
 
