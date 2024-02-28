@@ -49,6 +49,11 @@ namespace testeKeevo
                 
                 app.UseRouting();
 
+                app.UseCors(x => x
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+
                 app.UseAuthentication();
 
                 app.UseEndpoints(endpoints =>
