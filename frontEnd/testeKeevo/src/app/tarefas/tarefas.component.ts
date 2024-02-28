@@ -46,6 +46,14 @@ export class TarefasComponent  implements OnInit{
         status: 'pending',
         created_at: '2021-08-30T14:18:00.000Z',
       },
+      {
+        id: 3,
+        title: 'Tarefa 3',
+        description: 'Descrição 3',
+        status: 'pending',
+        created_at: '2021-08-30T14:18:00.000Z',
+      },
+
     ];
   }
 
