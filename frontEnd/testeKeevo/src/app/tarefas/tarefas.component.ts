@@ -21,16 +21,7 @@ export class TarefasComponent  implements OnInit{
   }
 
   public getTarefas(): void {
-    this.http.get('https://localhost/api/task').subscribe(
-      (response : any) => { // Change the type of 'data' to 'Object'
-        this.tarefasData = response;
-      },
-      (error) => {
-        console.error('Erro na requisição:', error);
-        // Lidar com erros
-      }
-    );
-    // Implemente a lógica para buscar as tarefas
+
     this.tarefasData = [
       {
         id: 1,
@@ -55,6 +46,15 @@ export class TarefasComponent  implements OnInit{
       },
 
     ];
+    this.http.get('https://localhost/api/task').subscribe(
+      (response : any) => { // Change the type of 'data' to 'Object'
+        this.tarefasData = response;
+      },
+      (error) => {
+        console.error('Erro na requisição:', error);
+        // Lidar com erros
+      }
+    );
   }
 
 }
