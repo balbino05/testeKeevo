@@ -1,6 +1,7 @@
 // ApplicationDbContext.cs
 
 using Microsoft.EntityFrameworkCore;
+using testeKeevo.Models;
 
 namespace testeKeevo.Data
 {
@@ -8,7 +9,7 @@ namespace testeKeevo.Data
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=keevo;Username=postgres;Password=Dragoon@182811");
-       public DbSet<Task> Tasks { get; set; }
+       public DbSet<MinhaTask> Tasks { get; set; }
     }
 
 

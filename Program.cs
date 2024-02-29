@@ -1,4 +1,5 @@
 using testeKeevo.Controllers;
+using testeKeevo.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,15 +21,14 @@ app.UseHttpsRedirection();
 
 app.MapGet("api/task", () =>
 {
-    return new testeKeevo.Controllers.Task().Get();
-
+    return new testeKeevo.Controllers.TaskItem().GetAll();
 })
 .WithName("GetTaskAll")
 .WithOpenApi();
 
 app.MapGet("api/task/{id}", (int id) =>
 {
-    return new testeKeevo.Controllers.Task().GetById(id);
+    return new getTask(id);
 
 })
 .WithName("GetTaskById")
