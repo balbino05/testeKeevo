@@ -21,7 +21,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("api/task", () =>
 {
-    return new testeKeevo.Controllers.TaskItem().GetAll();
+    return new task("Task 1", "Task 1 Description", "Open", DateTime.Now, DateTime.Now);
 })
 .WithName("GetTaskAll")
 .WithOpenApi();
@@ -31,7 +31,7 @@ app.MapGet("api/task/{id}", (int id) =>
     return new getTask(id);
 
 })
-.WithName("GetTaskById")
+.WithName("GetById")
 .WithOpenApi();
 
 app.MapPost("/task", (task task) =>

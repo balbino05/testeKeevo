@@ -29,7 +29,7 @@ namespace testeKeevo.Controllers
         /// </summary>
         /// <returns>Lista de itens</returns>
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetTaskAll()
         {
             // Lógica para obter dados
             var tasks =  await _ApplicationDbContext.Tasks.ToListAsync();

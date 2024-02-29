@@ -117,11 +117,3 @@
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.pdb
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/testeKeevo.genruntimeconfig.cache
 /home/ivan/workspaces/keevo/testeKeevo/obj/Debug/net8.0/ref/testeKeevo.dll
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/angular.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/e2e/tsconfig.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/package-lock.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/package.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/tsconfig.app.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/tsconfig.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/tsconfig.spec.json
-/home/ivan/workspaces/keevo/testeKeevo/bin/Debug/net8.0/Front/ProEventos-App/tslint.json
